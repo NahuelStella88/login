@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Establece la fuente para el texto del documento. */
+    background-color: aqua; /* Establece el color de fondo del cuerpo del documento. */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo del documento. */
+    display: flex; /* Utiliza el modelo de caja flexible para alinear los elementos hijos. */
+    justify-content: center; /* Centra horizontalmente el formulario en la página. */
+    align-items: center; /* Centra verticalmente el formulario en la página. */
+    height: 100vh; /* Establece la altura del cuerpo para que sea igual a la altura de la ventana gráfica. */
+}
+
+form {
+    margin: 15px; /* Añade un margen alrededor del formulario. */
+    background-color: whitesmoke; /* Establece el color de fondo del formulario. */
+    padding: 20px; /* Añade un relleno interno dentro del formulario. */
+    border-radius: 10px; /* Redondea las esquinas del formulario. */
+    box-shadow: 1px 1px 10px black; /* Añade una sombra alrededor del formulario. */
+    width: 350px; /* Establece el ancho del formulario. */
+}
+
+label {
+    display: block; /* Hace que cada etiqueta se muestre como un bloque separado. */
+    margin: 10px; /* Añade un margen alrededor de cada etiqueta. */
+}
+
+input {
+    width: 100%; /* Hace que cada campo de entrada ocupe el 100% del ancho de su contenedor. */
+    padding: 8px; /* Añade un relleno interno dentro de cada campo de entrada. */
+    margin-bottom: 15px; /* Añade un margen inferior a cada campo de entrada. */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho total del elemento. */
+}
+
+input[type="submit"] {
+    margin-bottom: 15px;
+    background-color: rgb(98, 98, 223); /* Establece el color de fondo del botón de envío. */
+    color: white; /* Establece el color del texto del botón de envío. */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón sobre el botón de envío. */
+    border: none; /* Elimina cualquier borde alrededor del botón de envío. */
+    border-radius: 5px; /* Redondea las esquinas del botón de envío. */
+    transition: all .5s ease; /* Define una transición para todos los cambios de estilo en el botón. */
+
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(30, 30, 95); /* Cambia el color de fondo del botón de envío cuando se pasa el ratón sobre él. */
+}
+
+.error-message {
+    color: red; /* Establece el color del texto de los mensajes de error. */
+    font-size: 12px; /* Establece el tamaño de la fuente de los mensajes de error. */
+    margin-top: -10px; /* Añade un margen superior negativo para ajustar la posición de los mensajes de error. */
+    margin-bottom: 10px; /* Añade un margen inferior a los mensajes de error. */
+    display: none; /* Oculta los mensajes de error por defecto. */
+}
+
+#show-hide {
+    position: relative; /* Posiciona el elemento relativo a su posición original en el flujo del documento. */
+    top: -10px; /* Desplaza el elemento 10 píxeles hacia arriba desde su posición original. */
+    float: right; /* Hace que el elemento flote a la derecha dentro de su contenedor. */
+    color: #a09595; /* Establece el color del texto del elemento. */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón sobre el elemento. */
+    border-bottom: 1px solid transparent; /* Añade un borde inferior transparente al elemento. */
+    transition: all .5s ease; /* Define una transición para todos los cambios de estilo en el elemento. */
+}
+
+#show-hide:hover {
+    border-bottom: 1px solid rgb(221, 218, 218); /* Cambia el color del borde inferior cuando se pasa el ratón sobre el elemento. */
+    color: #beb4b4; /* Cambia el color del texto cuando se pasa el ratón sobre el elemento. */
+}
